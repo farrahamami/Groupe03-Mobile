@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F8F5F5"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="7dp"/>
+
+    <RadioButton
+        android:id="@+id/kg_pnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Kg à Pound"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#4CAF50"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="number"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="109dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#8F8C8C"
+        android:shadowColor="#9C9494"
+        android:text="Conversion"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#938E8E"
+        android:textColorLink="#9A9393"
+        app:iconSize="20dp"
+        app:iconTint="#F1EBEB"
+        app:rippleColor="@color/cardview_shadow_end_color"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="391dp"
+        android:layout_height="24dp"
+        android:text="Entrez le poids:"
+        android:textColor="#8A8989"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <RadioButton
+        android:id="@+id/versKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pound à Kg"
+        android:textColor="#F6F1F1"
+        android:textColorLink="#4CAF50"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="41dp"
+        android:background="#676565"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calcul"
+            android:textColor="#FAF5F5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
